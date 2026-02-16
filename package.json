@@ -1,0 +1,29 @@
+{
+  "name": "visual-prog",
+  "version": "1.0.0",
+  "description": "Первое практическое задание",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SizikovK/Visual-Prog.git"
+  },
+  "keywords": [],
+  "author": "SizikovK",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SizikovK/Visual-Prog/issues"
+  },
+  "homepage": "https://github.com/SizikovK/Visual-Prog#readme",
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "@vitest/coverage-v8": "^4.0.18",
+    "node": "^25.6.1",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}

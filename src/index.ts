@@ -7,7 +7,7 @@ interface User {
     isActive: boolean;
 }
 
-function createUser(userId: number, userName: string, userEmail?: string) : User {
+export function createUser(userId: number, userName: string, userEmail?: string) : User {
     return { id: userId, name: userName, email: userEmail, isActive: true };
 }
 
@@ -38,11 +38,11 @@ interface Book {
     genre: Genre;
 }
 
-function createBook(book: Book) : Book {
+export function createBook(book: Book) : Book {
     return book;
 }
 
-function printBook(book: Book) : void {
+export function printBook(book: Book) : void {
     console.log(`Title: ${book.title}`);
     console.log(`Author: ${book.author}`);
     if(book.year != undefined) {
@@ -75,10 +75,10 @@ printBook(ex2);
 
 // ===== 3. Фигуры ======
 
-function calculateArea(shape: 'circle', param: { radius: number }) : number;
-function calculateArea(shape: 'square', param: { side: number }) : number;
+export function calculateArea(shape: 'circle', param: { radius: number }) : number;
+export function calculateArea(shape: 'square', param: { side: number }) : number;
 
-function calculateArea(shape: 'circle' | 'square', param: { radius?: number; side?: number }) : number {
+export function calculateArea(shape: 'circle' | 'square', param: { radius?: number; side?: number }) : number {
     if(shape == "circle") {
         const r = param.radius ?? 0;
         return 3.14 * r * r;
@@ -111,7 +111,7 @@ const statusColor: Record<Status, string> = {
     deleted: '\x1b[31mred\x1b[0m'
 };
 
-function getStatusColor(status: Status) : string {
+export function getStatusColor(status: Status) : string {
     return statusColor[status];
 }
 
@@ -124,7 +124,7 @@ console.log("deleted: " + getStatusColor('deleted'));
 
 type StringFormatter = (value: string, uppercase?: boolean) => string;
 
-const upperFirst: StringFormatter = (value, uppercase = false) => {
+export const upperFirst: StringFormatter = (value, uppercase = false) => {
     if(!value) return '';
     let res = value[0].toUpperCase() + value.slice(1);
 
@@ -135,7 +135,7 @@ const upperFirst: StringFormatter = (value, uppercase = false) => {
     return res;
 }
 
-const removeSpaces: StringFormatter = (value, uppercase = false) => {
+export const removeSpaces: StringFormatter = (value, uppercase = false) => {
     if(!value) return '';
     let res = value.trim();
 
@@ -157,7 +157,7 @@ console.log("removeSpaces: \"" + stroka2 + "\" ---> \"" + removeSpaces(stroka2, 
 
 // ======= 6. getFirstElement =======
 
-function getFirstElement<T>(arr: T[]): T | undefined {
+export function getFirstElement<T>(arr: T[]): T | undefined {
     return arr.length > 0 ? arr[0] : undefined;
 }
 
@@ -180,7 +180,7 @@ interface HasID {
     name: string;
 }
 
-function findById<T extends HasID>(items: T[], id: number) : T | undefined {
+export function findById<T extends HasID>(items: T[], id: number) : T | undefined {
     for(const item of items) {
         if(item.id === id) {
             return item;
