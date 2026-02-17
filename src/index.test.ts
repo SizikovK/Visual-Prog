@@ -35,7 +35,7 @@ describe('createBook function', () => {
 describe('calculateArea function', () => {
     it('calculateArea: cilcle', () => {
         const area = calculateArea('circle', { radius: 10 });
-        expect(area).toBeCloseTo(314, 1);
+        expect(area).toBeCloseTo(314.0, 1);
     });
 
     it('calculateArea: square', () => {
