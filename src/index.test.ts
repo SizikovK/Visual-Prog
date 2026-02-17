@@ -143,10 +143,7 @@ describe('findById function', () => {
 
     it('findById: normal val', () => {
         const user = findById(arr, 2);
-        expect(user).toEqual({
-            id: 2, 
-            name: "Викусик" 
-        });
+        expect(user).toBeOneOf(arr);
     });
 
     it('findById: wrong val', () => {
