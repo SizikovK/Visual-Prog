@@ -32,7 +32,7 @@ describe('createBook function', () => {
     });
 });
 
-describe('calculateArea перегрузки', () => {
+describe('calculateArea function', () => {
     it('calculateArea: cilcle', () => {
         const area = calculateArea('circle', { radius: 10 });
         expect(area).toBeCloseTo(314, 1);
