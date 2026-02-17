@@ -105,6 +105,7 @@ const statusColor: Record<Status, string> = {
     //new: 'yellow'
     //deleted: 'red'
 
+    //я захотел чтобы цветное было, в случае чего можно быстро поменять
     active: '\x1b[32mgreen\x1b[0m',
     inactive: '\x1b[90mgray\x1b[0m',
     new: '\x1b[33myellow\x1b[0m',
