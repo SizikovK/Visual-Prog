@@ -6,4 +6,4 @@
 ### Все практические работы раскиданы по веткам:
 
 - [**Практическая работа 1-2**](https://github.com/SizikovK/Visual-Prog/tree/lab1)
-
+- [**Практическая работа 3**](https://github.com/SizikovK/Visual-Prog/tree/lab3)
