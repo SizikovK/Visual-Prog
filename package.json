@@ -2,10 +2,11 @@
   "name": "visual-prog",
   "version": "1.0.0",
   "description": "Третье практическое задание",
-  "main": "index.s",
+  "main": "index.ts",
   "scripts": {
     "dev": "tsx src/index.ts",
     "test": "vitest",
+    "test:watch": "vitest --watch",
     "coverage": "vitest run --coverage"
   },
   "repository": {
