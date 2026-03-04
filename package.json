@@ -1,8 +1,8 @@
 {
   "name": "visual-prog",
   "version": "1.0.0",
-  "description": "Первое практическое задание",
-  "main": "index.js",
+  "description": "Третье практическое задание",
+  "main": "index.s",
   "scripts": {
     "dev": "tsx src/index.ts",
     "test": "vitest",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "@vitest/coverage-v8": "^4.0.18",
     "node": "^25.6.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
   }
