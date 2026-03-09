@@ -1,6 +1,7 @@
 ## Практическое занятие №3
 
-...
+- Функция csvToJSON
+- Функция formatCSVFileToJSONFile
 
 ### Запуск:
 ```
