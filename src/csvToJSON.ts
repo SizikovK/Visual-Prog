@@ -1,6 +1,6 @@
 export function csvToJSON(input: string[], delimiter: string) : object[] {
     if(!input || input.length < 2) {
-        throw new Error("Некорректная передача параметра input! Правильный вид: [шапка, данные...]");
+        throw new Error("Некорректная передача параметра input!");
     }
 
     const result: object[] = [];
@@ -11,14 +11,14 @@ export function csvToJSON(input: string[], delimiter: string) : object[] {
         const values = input[i].split(delimiter);
 
         if(header.length !== values.length) {
-            throw new Error("Несовпадение по количеству параметров");
+            throw new Error("Несовпадение по количеству параметров!");
         }
 
         const obj: { [key: string]: string | number } = {};
         
         for (let j = 0; j < header.length; j++) {
             if(values[j] === "") {
-                throw new Error("Передача пустого значения в параметр функции"); 
+                throw new Error("Передача пустого значения в параметр функции!"); 
             }
             
             obj[header[j]] = isNaN(Number(values[j])) ? values[j] : Number(values[j]);
