@@ -18,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/SizikovK/Visual-Prog/issues"
   },
-  "homepage": "https://github.com/SizikovK/Visual-Prog#readme"
+  "homepage": "https://github.com/SizikovK/Visual-Prog#readme",
+  "devDependencies": {
+    "@types/node": "^25.4.0",
+    "@vitest/coverage-v8": "^4.0.18",
+    "node": "^22.22.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
 }
