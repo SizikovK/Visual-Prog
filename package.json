@@ -1,7 +1,7 @@
 {
   "name": "visual-prog",
   "version": "1.0.0",
-  "description": "- Функция csvToJSON - Функция formatCSVFileToJSONFile",
+  "description": "Практическое задание 4",
   "main": "index.ts",
   "scripts": {
     "dev": "tsx src/index.ts",
