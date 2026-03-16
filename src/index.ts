@@ -21,15 +21,7 @@ function sort<T>(): Sort<T> {
 }
 
 function groupBy<T>(): GroupBy<T> {
-    return (key) => (data) => {
-        return Object.values(
-            data.reduce((acc, item) => {
-                const k = item[key] as unknown as string;
-                (acc[k] ??= { key: item[key], items: [] }).items.push(item);
-                return acc;
-            }, {} as Record<string, Group<T, typeof key>>)
-        );
-    };
+
 }
 
 function having<T>(): Having<T> {
