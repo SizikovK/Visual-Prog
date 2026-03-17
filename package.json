@@ -2,12 +2,9 @@
   "name": "visual-prog",
   "version": "1.0.0",
   "description": "lab6",
-  "main": "types.ts",
+  "main": "index.ts",
   "scripts": {
-    "dev": "tsx src/types.ts",
-    "test": "vitest",
-    "test:watch": "vitest --watch",
-    "coverage": "vitest run --coverage"
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -25,6 +22,7 @@
     "node": "^25.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.0"
+    "vitest": "^4.1.0",
+    "@rolldown/binding-linux-x64-gnu": "latest"
   }
 }
