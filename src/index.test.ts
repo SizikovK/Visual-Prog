@@ -1,5 +1,5 @@
 import { it, describe, expect } from 'vitest';
-import { where, sort, groupBy, having, query } from './pipeline';
+import { where, sort, groupBy, having, query } from './index';
 
 type User = {
     id: number;
