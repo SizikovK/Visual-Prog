@@ -2,9 +2,9 @@
   "name": "visual-prog",
   "version": "1.0.0",
   "description": "Практическое задание 4",
-  "main": "index.ts",
+  "main": "pipeline.ts",
   "scripts": {
-    "dev": "tsx src/index.ts",
+    "dev": "tsx src/pipeline.ts",
     "test": "vitest",
     "test:watch": "vitest --watch",
     "coverage": "vitest run --coverage"
