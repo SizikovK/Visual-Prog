@@ -20,10 +20,7 @@ export function sort<T>(): Sort<T> {
     };
 }
 
-export type Group<T, K extends keyof T> = { 
-    key: T[K]; 
-    items: T[];
-};
+export type Group<T, K extends keyof T> = { key: T[K]; items: T[]; }
 
 export type GroupBy<T> = <K extends keyof T>(key: K) => (data: T[]) => Group<T, K>[];
 
