@@ -7,7 +7,8 @@
 
 - [**Практическая работа 1-2**](https://github.com/SizikovK/Visual-Prog/tree/lab1)
 - [**Практическая работа 3**](https://github.com/SizikovK/Visual-Prog/tree/lab3)
-
+- [**Практическая работа 4-5**](https://github.com/SizikovK/Visual-Prog/tree/lab4)
+- [**Практическая работа 6**](https://github.com/SizikovK/Visual-Prog/tree/lab6)
 
 ### Памятка для настройки окружения
 ```
