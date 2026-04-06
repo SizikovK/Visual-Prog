@@ -12,6 +12,8 @@
 - [**Практическое задание 4**](https://github.com/SizikovK/Visual-Prog/tree/lab4)
 - [**Практическое задание 5**](https://github.com/SizikovK/Visual-Prog/tree/lab5)
 - [**Практическое задание 6**](https://github.com/SizikovK/Visual-Prog/tree/lab6)
+- [**Практическое задание 7**](https://github.com/SizikovK/Visual-Prog/tree/lab7)
+- [**Практическое задание 8-9**](https://github.com/SizikovK/Visual-Prog/tree/lab8-9)
 
 #### React
 
