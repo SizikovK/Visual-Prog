@@ -1,28 +1,73 @@
-# Визуальное программирование и человеко машинное взаимодействие
-Практические работы по Визуальному программированию
+# React + TypeScript + Vite
 
-## Выполнил Сизиков Константин ИП-413
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### Все практические работы раскиданы по веткам:
+Currently, two official plugins are available:
 
-#### TypeScript
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-- [**Практическое задание 1-2**](https://github.com/SizikovK/Visual-Prog/tree/lab1)
-- [**Практическое задание 3**](https://github.com/SizikovK/Visual-Prog/tree/lab3)
-- [**Практическое задание 4**](https://github.com/SizikovK/Visual-Prog/tree/lab4)
-- [**Практическое задание 5**](https://github.com/SizikovK/Visual-Prog/tree/lab5)
-- [**Практическое задание 6**](https://github.com/SizikovK/Visual-Prog/tree/lab6)
-- [**Практическое задание 7**](https://github.com/SizikovK/Visual-Prog/tree/lab7)
-- [**Практическое задание 8-9**](https://github.com/SizikovK/Visual-Prog/tree/lab8-9)
+## React Compiler
 
-#### React
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- [**Практическое задание 7**](https://github.com/SizikovK/Visual-Prog/tree/lab7)
+## Expanding the ESLint configuration
 
-### Памятка для настройки окружения
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
-npm init
-npm install -D @types/node vitest typescript tsx node @vitest/coverage-v8
-npx tsc --init
-mkdir ./src && touch ./src/index.ts
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
