@@ -17,6 +17,7 @@
 
 - [**Практическое задание 7**](https://github.com/SizikovK/Visual-Prog/tree/lab7)
 - [**Практическое задание 8-9**](https://github.com/SizikovK/Visual-Prog/tree/lab8-9)
+- [**Итоговый проект**](https://github.com/SizikovK/Visual-Prog/tree/final-proj)
 
 ### Памятка для настройки окружения
 ```
