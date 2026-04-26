@@ -16,6 +16,7 @@
 #### React
 
 - [**Практическое задание 7**](https://github.com/SizikovK/Visual-Prog/tree/lab7)
+- [**Практическое задание 8-9**](https://github.com/SizikovK/Visual-Prog/tree/lab8-9)
 
 ### Памятка для настройки окружения
 ```
